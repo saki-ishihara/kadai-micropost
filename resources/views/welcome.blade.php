@@ -19,4 +19,4 @@
             </div>
         </div>
     @endif
-@endsections
+@endsection
