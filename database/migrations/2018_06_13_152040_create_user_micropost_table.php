@@ -11,7 +11,7 @@ class CreateUserMicropostTable extends Migration
      *
      * @return void
      */
-    public function up()
+     public function up()
     {
         Schema::create('user_micropost', function (Blueprint $table) {
             $table->increments('id');
