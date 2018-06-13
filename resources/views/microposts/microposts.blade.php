@@ -11,6 +11,7 @@
             </div>
             <div>
                 <p>{!! nl2br(e($micropost->content)) !!}</p>
+                 @include('user_favorite.favorite_button', ['microposts' => $microposts])
             </div>
             <div>
                 @if (Auth::user()->id == $micropost->user_id)
@@ -19,6 +20,8 @@
                     {!! Form::close() !!}
                 @endif
             </div>
+         
+
         </div>
     </li>
 @endforeach
